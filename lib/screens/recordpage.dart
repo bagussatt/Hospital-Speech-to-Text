@@ -52,11 +52,11 @@ class _RecordPageState extends State<RecordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Rekaman'),
+        title: Text('Profile'),
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.only(left: 50),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               'Selamat datang, ${widget.name}!',
