@@ -32,12 +32,12 @@ class _LoginPageState extends State<LoginPage> {
                 TextFormField(
                   controller: nama,
                   decoration: InputDecoration(
-                    labelText: 'Nama Dokter',
+                    labelText: 'Name Doctor',
                     border: OutlineInputBorder(),
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Mohon masukkan nama dokter';
+                      return 'please enter name Doctor';
                     }
                     return null;
                   },
@@ -51,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Mohon masukkan password';
+                      return 'please enter password';
                     }
                     return null;
                   },

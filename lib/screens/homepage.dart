@@ -17,17 +17,17 @@ class _HomePageState extends State<HomePage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Konfirmasi'),
+          title: const Text('Confirmation'),
           content: Text(
-              'Apakah Anda ingin melanjutkan ke halaman rekam medis untuk $name?'),
+              'Do you want to proceed to the medical record page for $name?'),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, false), // Cancel
-              child: const Text('Batal'),
+              child: const Text('Cancel'),
             ),
             TextButton(
               onPressed: () => Navigator.pop(context, true), // Confirm
-              child: const Text('Ya'),
+              child: const Text('Yes'),
             ),
           ],
         );
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: [
                 Text(
-                  "Masukan Nama Pasien",
+                  "Enter Patient Name",
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.w500),
                 ),
                 SizedBox(
@@ -65,12 +65,12 @@ class _HomePageState extends State<HomePage> {
                   child: TextFormField(
                     controller: _nameController, // Assign controller
                     decoration: InputDecoration(
-                      labelText: 'Nama Pasien',
+                      labelText: 'Patient Name',
                       border: OutlineInputBorder(), // Add border
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Nama Pasien Tidak Boleh Kosong.';
+                        return 'Patient name cannot be empty.';
                       }
                       return null; // No error
                     },
