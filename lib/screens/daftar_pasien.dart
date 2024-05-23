@@ -5,10 +5,10 @@ import 'package:record_speechtotextfor_hospital/screens/detail_periksa.dart';
 import 'package:record_speechtotextfor_hospital/screens/profile_pasien.dart'; // Pastikan Anda memiliki halaman ini
 
 class DaftarPasien extends StatefulWidget {
-  const DaftarPasien({super.key, required this.id, required this.nama});
+  const DaftarPasien({super.key, required this.id, required this.namadoc});
 
   final String id;
-  final String nama;
+  final String namadoc;
 
   @override
   State<DaftarPasien> createState() => _DaftarPasienState();
@@ -80,7 +80,7 @@ class _DaftarPasienState extends State<DaftarPasien> {
                                 textAlign: TextAlign.center,
                               ),
                               Text(
-                                'Nama Dokter = ${widget.nama}',
+                                'namadoc Doctor = ${widget.namadoc}',
                                 textAlign: TextAlign.center,
                               ),
                             ],
@@ -134,7 +134,12 @@ class _DaftarPasienState extends State<DaftarPasien> {
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       16, 0, 0, 8),
-                                  child: Text('Patient List'),
+                                  child: Text(
+                                    'Patient List',
+                                    style: TextStyle(
+                                        fontSize: 25,
+                                        fontWeight: FontWeight.bold),
+                                  ),
                                 ),
                                 Divider(
                                   thickness: 1,
@@ -185,6 +190,8 @@ class _DaftarPasienState extends State<DaftarPasien> {
             builder: (context) => ProfileWidget(
               names: names[index],
               lastChecked: lastChecked[index],
+              namadoc: widget.namadoc,
+              id: widget.id,
             ),
           ),
         );

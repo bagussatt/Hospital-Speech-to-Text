@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 class DetailPeriksaPage extends StatelessWidget {
   final String names;
   final String lastChecked;
+  final String id;
 
-  const DetailPeriksaPage({Key? key, required this.names, required this.lastChecked}) : super(key: key);
+  const DetailPeriksaPage(
+      {Key? key, required this.names, required this.lastChecked, required this.id})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

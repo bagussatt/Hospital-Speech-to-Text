@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:record_speechtotextfor_hospital/screens/historypage.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 
 class ProfileWidget extends StatefulWidget {
   final String names;
   final String lastChecked;
-  const ProfileWidget({super.key, required this.names, required this.lastChecked});
+  final String namadoc;
+  final String id;
+  const ProfileWidget(
+      {super.key,
+      required this.names,
+      required this.lastChecked,
+      required this.namadoc, required this.id});
 
   State<ProfileWidget> createState() => _ProfileWidgetState();
 }
@@ -163,6 +170,23 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                             ? Icons.record_voice_over
                             : Icons.record_voice_over_outlined),
                         Text(_text),
+                        SizedBox(height: 20),
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HistoryPage(
+                                  namadoc: widget.namadoc,
+                                  names: widget.names,
+                                  voiceText: _text,
+                                  id : widget.id,
+                                ),
+                              ),
+                            );
+                          },
+                          child: Text('Save'),
+                        )
                       ],
                     ),
                   ),
