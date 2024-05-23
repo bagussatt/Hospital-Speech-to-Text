@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:record_speechtotextfor_hospital/screens/daftar_pasien.dart';
 import 'package:record_speechtotextfor_hospital/screens/homepage.dart';
+import 'package:record_speechtotextfor_hospital/screens/login_page.dart';
 import 'package:record_speechtotextfor_hospital/screens/recordpage.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DaftarPasien(),
+      home: LoginPage(),
       debugShowCheckedModeBanner: false,
     );
   }

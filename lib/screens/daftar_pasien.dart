@@ -4,8 +4,10 @@ import 'package:record_speechtotextfor_hospital/model/pasien_model.dart';
 export 'package:record_speechtotextfor_hospital/model/pasien_model.dart';
 
 class DaftarPasien extends StatefulWidget {
-  const DaftarPasien({super.key});
+  const DaftarPasien({super.key, required this.id, required this.nama});
 
+  final String id;
+  final String nama;
   @override
   State<DaftarPasien> createState() => _DaftarPasienState();
 }
@@ -72,11 +74,11 @@ class _DaftarPasienState extends State<DaftarPasien> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
-                            'ID',
+                            'ID = ${widget.id}',
                             textAlign: TextAlign.center,
                           ),
                           Text(
-                            'Nama Dokter',
+                            'Nama Dokter = ${widget.nama}',
                             textAlign: TextAlign.center,
                           ),
                         ],
