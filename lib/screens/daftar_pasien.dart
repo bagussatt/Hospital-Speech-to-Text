@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:record_speechtotextfor_hospital/model/pasien_model.dart';
 import 'package:record_speechtotextfor_hospital/screens/profile_pasien.dart'; // Pastikan Anda memiliki halaman ini
 
@@ -198,7 +197,7 @@ class _DaftarPasienState extends State<DaftarPasien> {
           curve: Curves.easeInOut,
           width: double.infinity,
           decoration: BoxDecoration(
-            color: _model.iuserHovered1! ? Color(0xFFF1F4F8) : Colors.white,
+            color: _model.iuserHovered1 ? Color(0xFFF1F4F8) : Colors.white,
             boxShadow: [
               BoxShadow(
                 blurRadius: 4,
