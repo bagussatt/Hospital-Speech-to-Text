@@ -146,15 +146,11 @@ class _DaftarPasienState extends State<DaftarPasien> {
                                   color: Color(0xFFE0E3E7),
                                 ),
                                 ListView(
-                                  padding: EdgeInsets.zero,
+                                  padding: EdgeInsets.all(10),
                                   shrinkWrap: true,
                                   scrollDirection: Axis.vertical,
                                   children: List.generate(
                                       4, (index) => buildPatientItem(index)),
-                                ),
-                                Divider(
-                                  thickness: 3,
-                                  color: Color(0xFFE0E3E7),
                                 ),
                               ],
                             ),
@@ -197,7 +193,7 @@ class _DaftarPasienState extends State<DaftarPasien> {
         );
       },
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+        padding: EdgeInsetsDirectional.fromSTEB(10, 5, 10, 5),
         child: AnimatedContainer(
           duration: Duration(milliseconds: 150),
           curve: Curves.easeInOut,
