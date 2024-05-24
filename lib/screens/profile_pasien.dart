@@ -121,6 +121,10 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                     ),
                   ),
                 ),
+                Divider(
+                  thickness: 1,
+                  color: Colors.black,
+                ),
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.all(20),
