@@ -80,7 +80,7 @@ class _DaftarPasienState extends State<DaftarPasien> {
                                 textAlign: TextAlign.center,
                               ),
                               Text(
-                                'namadoc Doctor = ${widget.namadoc}',
+                                'Doctor = ${widget.namadoc}',
                                 textAlign: TextAlign.center,
                               ),
                             ],
