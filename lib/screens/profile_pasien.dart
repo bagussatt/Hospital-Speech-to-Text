@@ -81,11 +81,14 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('Patient Data',
-                            style: TextStyle(
-                                fontSize: 42,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.teal)),
+                        const Text(
+                          'Patient Data',
+                          style: TextStyle(
+                            fontSize: 42,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.teal,
+                          ),
+                        ),
                         const SizedBox(height: 40),
                         Text('Full Name: ${widget.names}',
                             style: const TextStyle(fontSize: 20)),
