@@ -55,7 +55,7 @@ class _DaftarPasienState extends State<DaftarPasien> {
                         clipBehavior: Clip.antiAlias,
                         decoration: BoxDecoration(shape: BoxShape.circle),
                         child: Image.network(
-                          'https://picsum.photos/seed/867/600',
+                          'https://pina.id/_next/image?url=https%3A%2F%2Fpina-classroom.s3.ap-southeast-1.amazonaws.com%2Fpublic%2F713b49bdfae57d0bc769b21905589449.webp&w=1200&q=90',
                           fit: BoxFit.cover,
                         ),
                       ),
