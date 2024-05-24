@@ -39,19 +39,20 @@ class _DaftarPasienState extends State<DaftarPasien> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(40, 0, 20, 0),
+                padding: const EdgeInsetsDirectional.fromSTEB(40, 0, 20, 0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 70, 0, 0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0, 70, 0, 0),
                       child: Container(
                         width: 300,
                         height: 300,
                         clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(shape: BoxShape.circle),
+                        decoration: const BoxDecoration(shape: BoxShape.circle),
                         child: Image.network(
                           'https://pina.id/_next/image?url=https%3A%2F%2Fpina-classroom.s3.ap-southeast-1.amazonaws.com%2Fpublic%2F713b49bdfae57d0bc769b21905589449.webp&w=1200&q=90',
                           fit: BoxFit.cover,
@@ -59,7 +60,8 @@ class _DaftarPasienState extends State<DaftarPasien> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
                       child: Card(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
                         elevation: 4,
@@ -67,7 +69,7 @@ class _DaftarPasienState extends State<DaftarPasien> {
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -93,7 +95,7 @@ class _DaftarPasienState extends State<DaftarPasien> {
                         children: [
                           ElevatedButton(
                             onPressed: () {},
-                            child: Text('History'),
+                            child: const Text('History'),
                           )
                         ],
                       ),
@@ -109,12 +111,12 @@ class _DaftarPasienState extends State<DaftarPasien> {
                       children: [
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4,
                                 color: Color(0x33000000),
@@ -124,12 +126,12 @@ class _DaftarPasienState extends State<DaftarPasien> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(6),
+                            padding: const EdgeInsets.all(6),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Padding(
+                                const Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       16, 0, 0, 8),
                                   child: Text(
@@ -139,12 +141,12 @@ class _DaftarPasienState extends State<DaftarPasien> {
                                         fontWeight: FontWeight.bold),
                                   ),
                                 ),
-                                Divider(
+                                const Divider(
                                   thickness: 1,
                                   color: Color(0xFFE0E3E7),
                                 ),
                                 ListView(
-                                  padding: EdgeInsets.all(10),
+                                  padding: const EdgeInsets.all(10),
                                   shrinkWrap: true,
                                   scrollDirection: Axis.vertical,
                                   children: List.generate(
@@ -191,14 +193,15 @@ class _DaftarPasienState extends State<DaftarPasien> {
         );
       },
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(10, 5, 10, 5),
+        padding: const EdgeInsetsDirectional.fromSTEB(10, 5, 10, 5),
         child: AnimatedContainer(
-          duration: Duration(milliseconds: 150),
+          duration: const Duration(milliseconds: 150),
           curve: Curves.easeInOut,
           width: double.infinity,
           decoration: BoxDecoration(
-            color: _model.iuserHovered1 ? Color(0xFFF1F4F8) : Colors.white,
-            boxShadow: [
+            color:
+                _model.iuserHovered1 ? const Color(0xFFF1F4F8) : Colors.white,
+            boxShadow: const [
               BoxShadow(
                 blurRadius: 4,
                 color: Color(0x33000000),
@@ -207,16 +210,16 @@ class _DaftarPasienState extends State<DaftarPasien> {
             ],
             borderRadius: BorderRadius.circular(14),
             border: Border.all(
-              color: Color(0xFF686868),
+              color: const Color(0xFF686868),
             ),
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(12, 8, 12, 8),
+            padding: const EdgeInsetsDirectional.fromSTEB(12, 8, 12, 8),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(40),
                     child: Image.network(
@@ -229,7 +232,7 @@ class _DaftarPasienState extends State<DaftarPasien> {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -239,7 +242,8 @@ class _DaftarPasienState extends State<DaftarPasien> {
                           names[index],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                          padding:
+                              const EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
                           child: Text(
                             'Last Check ${lastChecked[index]}',
                           ),

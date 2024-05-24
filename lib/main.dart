@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:record_speechtotextfor_hospital/screens/daftar_pasien.dart';
-import 'package:record_speechtotextfor_hospital/screens/historypage.dart';
 import 'package:record_speechtotextfor_hospital/screens/login_page.dart';
-import 'package:record_speechtotextfor_hospital/screens/profile_pasien.dart';
 
 void main() {
   runApp(const MyApp());

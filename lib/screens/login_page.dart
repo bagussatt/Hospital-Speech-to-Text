@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: const Text('Login'),
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -31,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
               children: [
                 TextFormField(
                   controller: namadoc,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Name Doctor',
                     border: OutlineInputBorder(),
                   ),
@@ -42,10 +42,10 @@ class _LoginPageState extends State<LoginPage> {
                     return null;
                   },
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 TextFormField(
                   obscureText: true, // Menyembunyikan input password
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Password',
                     border: OutlineInputBorder(),
                   ),
@@ -56,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
                     return null;
                   },
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 ElevatedButton(
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                       );
                     }
                   },
-                  child: Text('Login'),
+                  child: const Text('Login'),
                 ),
               ],
             ),
