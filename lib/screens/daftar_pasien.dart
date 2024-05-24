@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:record_speechtotextfor_hospital/model/pasien_model.dart';
-import 'package:record_speechtotextfor_hospital/screens/detail_periksa.dart';
 import 'package:record_speechtotextfor_hospital/screens/profile_pasien.dart'; // Pastikan Anda memiliki halaman ini
 
 class DaftarPasien extends StatefulWidget {
