@@ -54,150 +54,454 @@ class _ProfileWidgetState extends State<ProfileWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
+      
       body: SafeArea(
+        top: true,
         child: Padding(
-          padding: const EdgeInsets.all(8),
+          padding: EdgeInsets.all(12),
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
-              color: Colors.white,
+            
+decoration: BoxDecoration(
+              color: Theme.of(context).scaffoldBackgroundColor,
               boxShadow: [
                 BoxShadow(
-                  blurRadius: 6,
-                  color: Colors.grey.withOpacity(0.2),
-                  offset: const Offset(0, 2),
+                  blurRadius
+: 4,
+                  color: Colors.black.withOpacity(0.33),
+                  offset: const Offset(
+                    0,
+                    2,
+                  ),
                 )
               ],
               borderRadius: BorderRadius.circular(12),
-            ),
+            )
+,
             child: Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'Patient Data',
-                          style: TextStyle(
-                            fontSize: 42,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.teal,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(20, 20, 0, 10),
+                        child: Text(
+                          'Data Pasien',
+                          textAlign: TextAlign.start,
+                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                        ),
+                      ),
+                      Divider(
+                        thickness: 1,
+                        color: Color(0xFFE0E3E7),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(20, 10, 0, 0),
+                        child: Text(
+                          'Randy',
+                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                        ),
+                      ),
+                      Expanded(
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      20, 0, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 10, 0, 0),
+                                        child: Text(
+                                          'Nama Lengkap: ',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 10, 0, 0),
+                                        child: Text(
+                                          'Randy Peterson',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      20, 0, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 0, 0),
+                                        child: Text(
+                                          'Tanggal Lahir: ',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 0, 0),
+                                        child: Text(
+                                          '1 Januari 1990',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      20, 0, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 0, 0),
+                                        child: Text(
+                                          'Jenis Kelamin: ',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 0, 0),
+                                        child: Text(
+                                          'Laki-laki',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      20, 0, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 0, 0),
+                                        child: Text(
+                                          'Alamat: ',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 5, 0),
+                                        child: Text(
+                                          'Jl. Mawar No. 123, Jakarta',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      20, 0, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 0, 0),
+                                        child: Text(
+                                          'Nomor Telepon: ',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 0, 0),
+                                        child: Text(
+                                          '08123456789',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      20, 0, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 0, 0),
+                                        child: Text(
+                                          'Nomor Asuransi: ',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 50, 0, 0),
+                                        child: Text(
+                                          '1234567890',
+                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            VerticalDivider(
+                              thickness: 1,
+                              color: Color(0xFFE0E3E7),
+                            ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Data Klinis',
+                                  style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10, 5, 0, 0),
+                                  child: Text(
+                                    'Riwayat Penyakit',
+                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10, 5, 0, 0),
+                                  child: Text(
+                                    '- Diabetes, 2018',
+                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10, 5, 0, 0),
+                                  child: Text(
+                                    '- Hipertensi, 2015',
+                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10, 15, 0, 0),
+                                  child: Text(
+                                    'Alergi',
+                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10, 5, 0, 0),
+                                  child: Text(
+                                    '-',
+                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10, 15, 0, 0),
+                                  child: Text(
+                                    'Hasil Tes',
+                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10, 5, 0, 0),
+                                  child: Text(
+                                    '- Gula darah: 150 mg/dL',
+                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+  fontFamily: 'Outfit',
+  letterSpacing: 0,
+),
+
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10, 5, 0, 0),
+                                  child: Text(
+                                    '- Tekanan darah: 140/90 mmHg',
+                                    
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
+                        child: Text(
+                          'Recording...',
+                          
+                        ),
+                      ),
+                      SizedBox(
+                        width: 300,
+                        child: Divider(
+                          thickness: 1,
+                          color: Color(0xFFE0E3E7),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          width: 299,
+                          height: 100,
+                          decoration: BoxDecoration(
+                            
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: Color(0xFFE0E3E7),
+                              width: 1,
+                            ),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(5, 5, 0, 0),
+                            child: RichText(
+                              textScaler: MediaQuery.of(context).textScaler,
+                              text: TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: 'Dokter:',
+                                    
+                                  ),
+                                  TextSpan(
+                                    text: ' Ada yang bisa dibantu?',
+                                    style: TextStyle(),
+                                  )
+                                ],
+                                style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontFamily: 'Readex Pro',letterSpacing: 0,),
+
+                              ),
+                            ),
                           ),
                         ),
-                        const SizedBox(height: 40),
-                        Text('Full Name: ${widget.names}',
-                            style: const TextStyle(fontSize: 20)),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        const Text('Date of Birth: January 1, 1990',
-                            style: TextStyle(fontSize: 20)),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        const Text('Gender: Man',
-                            style: TextStyle(fontSize: 20)),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        const Text('Address: Jl. Mawar No. 123, Jakarta',
-                            style: TextStyle(fontSize: 20)),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        const Text('Phone number: 08123456789',
-                            style: TextStyle(fontSize: 20)),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        const Text('Insurance Number: 000004',
-                            style: TextStyle(fontSize: 20)),
-                      ],
-                    ),
-                  ),
-                ),
-                Divider(
-                  thickness: 1,
-                  color: Colors.black,
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text('Clinical Data',
-                            style: TextStyle(
-                                fontSize: 42,
-                                fontWeight: FontWeight.w900,
-                                color: Colors.teal)),
-                        const SizedBox(height: 28),
-                        Text('Last Check : ${widget.lastChecked} ',
-                            style: const TextStyle(
-                              fontSize: 28,
-                              fontWeight: FontWeight.w900,
-                            )),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        const Text('- ', style: TextStyle(fontSize: 20)),
-                        const SizedBox(height: 20),
-                        const Text('Disease History',
-                            style: TextStyle(
-                              fontSize: 28,
-                              fontWeight: FontWeight.w900,
-                            )),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        const Text('- Hipertensi, 2018',
-                            style: TextStyle(fontSize: 20)),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        const Text('- Diabetes, 2015',
-                            style: TextStyle(fontSize: 20)),
-                      ],
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(40),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Icon(_isListening
-                            ? Icons.record_voice_over
-                            : Icons.record_voice_over_outlined),
-                        Text(_text),
-                        const SizedBox(height: 20),
-                        ElevatedButton(
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => HistoryPage(
-                                  namadoc: widget.namadoc,
-                                  names: widget.names,
-                                  voiceText: _text,
-                                  id: widget.id,
-                                ),
-                              ),
-                            );
-                          },
-                          child: const Text('Save'),
-                        )
-                      ],
-                    ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(10, 5, 0, 10),
+                        child: ElevatedButton(onPressed: (){}, child: Text('Save', style: TextStyle(color: Color(0xFF4D3AF7),),))
+                      ),
+                    ],
                   ),
                 ),
               ],
