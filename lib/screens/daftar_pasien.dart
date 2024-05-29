@@ -135,7 +135,7 @@ class _DaftarPasienState extends State<DaftarPasien> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       16, 0, 0, 8),
                                   child: Text(
-                                    'Patient List',
+                                    'Incoming list',
                                     style: TextStyle(
                                         fontSize: 25,
                                         fontWeight: FontWeight.bold),

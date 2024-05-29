@@ -173,7 +173,6 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                     padding: const EdgeInsets.all(40),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Icon(_isListening
