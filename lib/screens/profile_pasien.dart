@@ -54,7 +54,6 @@ class _ProfileWidgetState extends State<ProfileWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      
       body: SafeArea(
         top: true,
         child: Padding(
@@ -62,13 +61,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            
-decoration: BoxDecoration(
+            decoration: BoxDecoration(
               color: Theme.of(context).scaffoldBackgroundColor,
               boxShadow: [
                 BoxShadow(
-                  blurRadius
-: 4,
+                  blurRadius: 4,
                   color: Colors.black.withOpacity(0.33),
                   offset: const Offset(
                     0,
@@ -77,8 +74,7 @@ decoration: BoxDecoration(
                 )
               ],
               borderRadius: BorderRadius.circular(12),
-            )
-,
+            ),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -94,11 +90,13 @@ decoration: BoxDecoration(
                         child: Text(
                           'Data Pasien',
                           textAlign: TextAlign.start,
-                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineMedium!
+                              .copyWith(
+                                fontFamily: 'Outfit',
+                                letterSpacing: 0,
+                              ),
                         ),
                       ),
                       Divider(
@@ -109,11 +107,13 @@ decoration: BoxDecoration(
                         padding: EdgeInsetsDirectional.fromSTEB(20, 10, 0, 0),
                         child: Text(
                           'Randy',
-                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineMedium!
+                              .copyWith(
+                                fontFamily: 'Outfit',
+                                letterSpacing: 0,
+                              ),
                         ),
                       ),
                       Expanded(
@@ -137,11 +137,13 @@ decoration: BoxDecoration(
                                             0, 10, 0, 0),
                                         child: Text(
                                           'Nama Lengkap: ',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                       Padding(
@@ -149,11 +151,13 @@ decoration: BoxDecoration(
                                             0, 10, 0, 0),
                                         child: Text(
                                           'Randy Peterson',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                     ],
@@ -170,11 +174,13 @@ decoration: BoxDecoration(
                                             5, 50, 0, 0),
                                         child: Text(
                                           'Tanggal Lahir: ',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                       Padding(
@@ -182,11 +188,13 @@ decoration: BoxDecoration(
                                             5, 50, 0, 0),
                                         child: Text(
                                           '1 Januari 1990',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                     ],
@@ -203,11 +211,13 @@ decoration: BoxDecoration(
                                             5, 50, 0, 0),
                                         child: Text(
                                           'Jenis Kelamin: ',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                       Padding(
@@ -215,11 +225,13 @@ decoration: BoxDecoration(
                                             5, 50, 0, 0),
                                         child: Text(
                                           'Laki-laki',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                     ],
@@ -236,11 +248,13 @@ decoration: BoxDecoration(
                                             5, 50, 0, 0),
                                         child: Text(
                                           'Alamat: ',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                       Padding(
@@ -248,11 +262,13 @@ decoration: BoxDecoration(
                                             5, 50, 5, 0),
                                         child: Text(
                                           'Jl. Mawar No. 123, Jakarta',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                     ],
@@ -269,11 +285,13 @@ decoration: BoxDecoration(
                                             5, 50, 0, 0),
                                         child: Text(
                                           'Nomor Telepon: ',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                       Padding(
@@ -281,11 +299,13 @@ decoration: BoxDecoration(
                                             5, 50, 0, 0),
                                         child: Text(
                                           '08123456789',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                     ],
@@ -302,11 +322,13 @@ decoration: BoxDecoration(
                                             5, 50, 0, 0),
                                         child: Text(
                                           'Nomor Asuransi: ',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                       Padding(
@@ -314,11 +336,13 @@ decoration: BoxDecoration(
                                             5, 50, 0, 0),
                                         child: Text(
                                           '1234567890',
-                                          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineMedium!
+                                              .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                              ),
                                         ),
                                       ),
                                     ],
@@ -336,22 +360,26 @@ decoration: BoxDecoration(
                               children: [
                                 Text(
                                   'Data Klinis',
-                                  style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineMedium!
+                                      .copyWith(
+                                        fontFamily: 'Outfit',
+                                        letterSpacing: 0,
+                                      ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       10, 5, 0, 0),
                                   child: Text(
                                     'Riwayat Penyakit',
-                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineMedium!
+                                        .copyWith(
+                                          fontFamily: 'Outfit',
+                                          letterSpacing: 0,
+                                        ),
                                   ),
                                 ),
                                 Padding(
@@ -359,11 +387,13 @@ decoration: BoxDecoration(
                                       10, 5, 0, 0),
                                   child: Text(
                                     '- Diabetes, 2018',
-                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineMedium!
+                                        .copyWith(
+                                          fontFamily: 'Outfit',
+                                          letterSpacing: 0,
+                                        ),
                                   ),
                                 ),
                                 Padding(
@@ -371,11 +401,13 @@ decoration: BoxDecoration(
                                       10, 5, 0, 0),
                                   child: Text(
                                     '- Hipertensi, 2015',
-                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineMedium!
+                                        .copyWith(
+                                          fontFamily: 'Outfit',
+                                          letterSpacing: 0,
+                                        ),
                                   ),
                                 ),
                                 Padding(
@@ -383,11 +415,13 @@ decoration: BoxDecoration(
                                       10, 15, 0, 0),
                                   child: Text(
                                     'Alergi',
-                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineMedium!
+                                        .copyWith(
+                                          fontFamily: 'Outfit',
+                                          letterSpacing: 0,
+                                        ),
                                   ),
                                 ),
                                 Padding(
@@ -395,11 +429,13 @@ decoration: BoxDecoration(
                                       10, 5, 0, 0),
                                   child: Text(
                                     '-',
-                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineMedium!
+                                        .copyWith(
+                                          fontFamily: 'Outfit',
+                                          letterSpacing: 0,
+                                        ),
                                   ),
                                 ),
                                 Padding(
@@ -407,11 +443,13 @@ decoration: BoxDecoration(
                                       10, 15, 0, 0),
                                   child: Text(
                                     'Hasil Tes',
-                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineMedium!
+                                        .copyWith(
+                                          fontFamily: 'Outfit',
+                                          letterSpacing: 0,
+                                        ),
                                   ),
                                 ),
                                 Padding(
@@ -419,11 +457,13 @@ decoration: BoxDecoration(
                                       10, 5, 0, 0),
                                   child: Text(
                                     '- Gula darah: 150 mg/dL',
-                                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-  fontFamily: 'Outfit',
-  letterSpacing: 0,
-),
-
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineMedium!
+                                        .copyWith(
+                                          fontFamily: 'Outfit',
+                                          letterSpacing: 0,
+                                        ),
                                   ),
                                 ),
                                 Padding(
@@ -431,7 +471,6 @@ decoration: BoxDecoration(
                                       10, 5, 0, 0),
                                   child: Text(
                                     '- Tekanan darah: 140/90 mmHg',
-                                    
                                   ),
                                 ),
                               ],
@@ -453,7 +492,6 @@ decoration: BoxDecoration(
                         padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
                         child: Text(
                           'Recording...',
-                          
                         ),
                       ),
                       SizedBox(
@@ -468,7 +506,6 @@ decoration: BoxDecoration(
                           width: 299,
                           height: 100,
                           decoration: BoxDecoration(
-                            
                             borderRadius: BorderRadius.circular(8),
                             border: Border.all(
                               color: Color(0xFFE0E3E7),
@@ -483,24 +520,34 @@ decoration: BoxDecoration(
                                 children: [
                                   TextSpan(
                                     text: 'Dokter:',
-                                    
                                   ),
                                   TextSpan(
                                     text: ' Ada yang bisa dibantu?',
                                     style: TextStyle(),
                                   )
                                 ],
-                                style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontFamily: 'Readex Pro',letterSpacing: 0,),
-
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyMedium!
+                                    .copyWith(
+                                      fontFamily: 'Readex Pro',
+                                      letterSpacing: 0,
+                                    ),
                               ),
                             ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(10, 5, 0, 10),
-                        child: ElevatedButton(onPressed: (){}, child: Text('Save', style: TextStyle(color: Color(0xFF4D3AF7),),))
-                      ),
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 5, 0, 10),
+                          child: ElevatedButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Save',
+                                style: TextStyle(
+                                  color: Color(0xFF4D3AF7),
+                                ),
+                              ))),
                     ],
                   ),
                 ),
