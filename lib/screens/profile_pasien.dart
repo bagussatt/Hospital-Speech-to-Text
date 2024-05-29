@@ -142,7 +142,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             'Nama Lengkap: ',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -157,7 +157,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             'Randy Peterson',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -181,7 +181,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             'Tanggal Lahir: ',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -196,7 +196,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             '1 Januari 1990',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -220,7 +220,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             'Jenis Kelamin: ',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -235,7 +235,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             'Laki-laki',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -259,7 +259,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             'Alamat: ',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -274,7 +274,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             'Jl. Mawar No. 123, Jakarta',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -298,7 +298,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             'Nomor Telepon: ',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -313,7 +313,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             '08123456789',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -337,7 +337,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             'Nomor Asuransi: ',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -352,7 +352,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             '1234567890',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headlineMedium!
+                                                .titleLarge!
                                                 .copyWith(
                                                   fontFamily: 'Outfit',
                                                   letterSpacing: 0,
@@ -378,9 +378,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         .textTheme
                                         .headlineMedium!
                                         .copyWith(
-                                          fontFamily: 'Outfit',
-                                          letterSpacing: 0,
-                                        ),
+                                            fontFamily: 'Outfit',
+                                            letterSpacing: 0,
+                                            fontWeight: FontWeight.bold),
                                   ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
@@ -389,7 +389,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       'Riwayat Penyakit',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headlineMedium!
+                                          .titleLarge!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -403,7 +403,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       '- Diabetes, 2018',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headlineMedium!
+                                          .titleLarge!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -417,7 +417,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       '- Hipertensi, 2015',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headlineMedium!
+                                          .titleLarge!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -431,7 +431,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       'Alergi',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headlineMedium!
+                                          .titleLarge!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -445,7 +445,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       '-',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headlineMedium!
+                                          .titleLarge!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -459,7 +459,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       'Hasil Tes',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headlineMedium!
+                                          .titleLarge!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -473,7 +473,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       '- Gula darah: 150 mg/dL',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headlineMedium!
+                                          .titleLarge!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -487,7 +487,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       '- Tekanan darah: 140/90 mmHg',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headlineMedium!
+                                          .titleLarge!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
