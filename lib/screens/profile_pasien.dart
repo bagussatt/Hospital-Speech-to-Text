@@ -88,7 +88,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(20, 20, 0, 10),
                         child: Text(
-                          'Data Pasien',
+                          'Patience Data',
                           textAlign: TextAlign.start,
                           style: Theme.of(context)
                               .textTheme
@@ -139,7 +139,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 10, 0, 0),
                                           child: Text(
-                                            'Nama Lengkap: ',
+                                            'Full Name: ',
                                             style: Theme.of(context)
                                                 .textTheme
                                                 .titleLarge!
@@ -178,7 +178,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   5, 50, 0, 0),
                                           child: Text(
-                                            'Tanggal Lahir: ',
+                                            'Birth Date: ',
                                             style: Theme.of(context)
                                                 .textTheme
                                                 .titleLarge!
@@ -193,46 +193,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   5, 50, 0, 0),
                                           child: Text(
-                                            '1 Januari 1990',
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .titleLarge!
-                                                .copyWith(
-                                                  fontFamily: 'Outfit',
-                                                  letterSpacing: 0,
-                                                ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        20, 0, 0, 0),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
-                                          child: Text(
-                                            'Jenis Kelamin: ',
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .titleLarge!
-                                                .copyWith(
-                                                  fontFamily: 'Outfit',
-                                                  letterSpacing: 0,
-                                                ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
-                                          child: Text(
-                                            'Laki-laki',
+                                            '1 January 1990',
                                             style: Theme.of(context)
                                                 .textTheme
                                                 .titleLarge!
@@ -256,7 +217,46 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   5, 50, 0, 0),
                                           child: Text(
-                                            'Alamat: ',
+                                            'Gender: ',
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .titleLarge!
+                                                .copyWith(
+                                                  fontFamily: 'Outfit',
+                                                  letterSpacing: 0,
+                                                ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  5, 50, 0, 0),
+                                          child: Text(
+                                            'Men',
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .titleLarge!
+                                                .copyWith(
+                                                  fontFamily: 'Outfit',
+                                                  letterSpacing: 0,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        20, 0, 0, 0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  5, 50, 0, 0),
+                                          child: Text(
+                                            'Address: ',
                                             style: Theme.of(context)
                                                 .textTheme
                                                 .titleLarge!
@@ -295,7 +295,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   5, 50, 0, 0),
                                           child: Text(
-                                            'Nomor Telepon: ',
+                                            'Phone Number: ',
                                             style: Theme.of(context)
                                                 .textTheme
                                                 .titleLarge!
@@ -334,7 +334,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   5, 50, 0, 0),
                                           child: Text(
-                                            'Nomor Asuransi: ',
+                                            'Insurance Number: ',
                                             style: Theme.of(context)
                                                 .textTheme
                                                 .titleLarge!
@@ -373,7 +373,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Data Klinis',
+                                    'Clinical Data',
                                     style: Theme.of(context)
                                         .textTheme
                                         .headlineMedium!
@@ -386,7 +386,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         10, 5, 0, 0),
                                     child: Text(
-                                      'Riwayat Penyakit',
+                                      'Disease History',
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleLarge!
@@ -414,7 +414,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         10, 5, 0, 0),
                                     child: Text(
-                                      '- Hipertensi, 2015',
+                                      '- Hypertension, 2015',
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleLarge!
@@ -428,7 +428,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         10, 15, 0, 0),
                                     child: Text(
-                                      'Alergi',
+                                      'Allergies',
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleLarge!
@@ -456,7 +456,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         10, 15, 0, 0),
                                     child: Text(
-                                      'Hasil Tes',
+                                      'Test Results',
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleLarge!
@@ -470,7 +470,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         10, 5, 0, 0),
                                     child: Text(
-                                      '- Gula darah: 150 mg/dL',
+                                      '- Blood sugar: 150 mg/dL',
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleLarge!
