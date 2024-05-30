@@ -138,7 +138,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 10, 0, 0),
+                                                  5, 10, 0, 0),
                                           child: Text(
                                             'Full Name: ',
                                             style: Theme.of(context)
@@ -177,7 +177,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
+                                                  5, 20, 0, 0),
                                           child: Text(
                                             'Birth Date: ',
                                             style: Theme.of(context)
@@ -192,7 +192,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
+                                                  5, 20, 0, 0),
                                           child: Text(
                                             '1 January 1990',
                                             style: Theme.of(context)
@@ -216,7 +216,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
+                                                  5, 20, 0, 0),
                                           child: Text(
                                             'Gender: ',
                                             style: Theme.of(context)
@@ -231,7 +231,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
+                                                  5, 20, 0, 0),
                                           child: Text(
                                             'Men',
                                             style: Theme.of(context)
@@ -255,7 +255,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
+                                                  5, 20, 0, 0),
                                           child: Text(
                                             'Address: ',
                                             style: Theme.of(context)
@@ -270,7 +270,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 5, 0),
+                                                  5, 20, 5, 0),
                                           child: Text(
                                             'Jl. Mawar No. 123, Jakarta',
                                             style: Theme.of(context)
@@ -294,7 +294,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
+                                                  5, 20, 0, 0),
                                           child: Text(
                                             'Phone Number: ',
                                             style: Theme.of(context)
@@ -309,7 +309,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
+                                                  5, 20, 0, 0),
                                           child: Text(
                                             '08123456789',
                                             style: Theme.of(context)
@@ -333,7 +333,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
+                                                  5, 20, 0, 0),
                                           child: Text(
                                             'Insurance Number: ',
                                             style: Theme.of(context)
@@ -348,7 +348,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  5, 50, 0, 0),
+                                                  5, 20, 0, 0),
                                           child: Text(
                                             '1234567890',
                                             style: Theme.of(context)
@@ -493,6 +493,98 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
                                           ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              VerticalDivider(
+                                thickness: 1,
+                                color: Color(0xFFE0E3E7),
+                              ),
+                              Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Pharmacy',
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineMedium!
+                                        .copyWith(
+                                            fontFamily: 'Outfit',
+                                            letterSpacing: 0,
+                                            fontWeight: FontWeight.bold),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 5, 0, 0),
+                                    child: Text(
+                                      'Medicine',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleLarge!
+                                          .copyWith(
+                                            fontFamily: 'Outfit',
+                                            letterSpacing: 0,
+                                          ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 5, 0, 0),
+                                    child: Text(
+                                      '- Amoxicillin 500 mg capsules: 3 x daily for 7 days',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodyLarge!
+                                          .copyWith(
+                                            fontFamily: 'Outfit',
+                                            letterSpacing: 0,
+                                          ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 5, 0, 0),
+                                    child: Text(
+                                      '- Paracetamol 500 mg tablets: 3 x daily for 3 days',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodyLarge!
+                                          .copyWith(
+                                            fontFamily: 'Outfit',
+                                            letterSpacing: 0,
+                                          ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 15, 0, 0),
+                                    child: Text(
+                                      'Description',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleLarge!
+                                          .copyWith(
+                                            fontFamily: 'Outfit',
+                                            letterSpacing: 0,
+                                          ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 5, 0, 0),
+                                    child: Container(
+                                      child: Text(
+                                        '',
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge!
+                                            .copyWith(
+                                              fontFamily: 'Outfit',
+                                              letterSpacing: 0,
+                                            ),
+                                      ),
                                     ),
                                   ),
                                 ],
