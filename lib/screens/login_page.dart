@@ -39,6 +39,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     fillColor: Colors.grey[200],
                     filled: true,
+                    constraints: const BoxConstraints(maxWidth: 300),
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -57,6 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     fillColor: Colors.grey[200],
                     filled: true,
+                    constraints: const BoxConstraints(maxWidth: 300),
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
