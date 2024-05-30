@@ -575,15 +575,22 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         10, 5, 0, 0),
                                     child: Container(
-                                      child: Text(
-                                        '',
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .bodyLarge!
-                                            .copyWith(
-                                              fontFamily: 'Outfit',
-                                              letterSpacing: 0,
+                                      width: 400,
+                                      child: Flexible(
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              'If side effects occur, stop using the medicine immediately and consult a doctor.',
+                                              style: Theme.of(context)
+                                                  .textTheme
+                                                  .bodyLarge!
+                                                  .copyWith(
+                                                    fontFamily: 'Outfit',
+                                                    letterSpacing: 0,
+                                                  ),
                                             ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
