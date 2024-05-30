@@ -404,7 +404,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       '- Diabetes, 2018',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .titleLarge!
+                                          .titleMedium!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -418,7 +418,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       '- Hypertension, 2015',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .titleLarge!
+                                          .titleMedium!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -474,7 +474,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       '- Blood sugar: 150 mg/dL',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .titleLarge!
+                                          .titleMedium!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -488,7 +488,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       '- Blood Preasure: 140/90 mmHg',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .titleLarge!
+                                          .titleMedium!
                                           .copyWith(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0,
@@ -496,6 +496,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     ),
                                   ),
                                 ],
+                              ),
+                              SizedBox(
+                                width: 20,
                               ),
                               VerticalDivider(
                                 thickness: 1,
