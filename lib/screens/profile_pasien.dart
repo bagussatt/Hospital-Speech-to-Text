@@ -47,6 +47,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
         }),
         listenFor: const Duration(
             hours: 100), // Mendengarkan untuk durasi yang sangat panjang
+        pauseFor: const Duration(minutes: 45),
       );
     }
   }
@@ -561,7 +562,19 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(10, 5, 0, 10),
                           child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => HistoryPage(
+                                      namadoc: widget.namadoc,
+                                      names: widget.names,
+                                      voiceText: _text,
+                                      id: widget.id,
+                                    ),
+                                  ),
+                                );
+                              },
                               child: Text(
                                 'Save',
                                 style: TextStyle(
