@@ -22,7 +22,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final SpeechToText _speech = SpeechToText();
   bool _isListening = false;
-  String _text = 'recording starts';
+  String _text = '';
 
   @override
   void initState() {
@@ -154,7 +154,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 10, 0, 0),
                                           child: Text(
-                                            'Randy Peterson',
+                                            '${widget.names}',
                                             style: Theme.of(context)
                                                 .textTheme
                                                 .titleLarge!
@@ -484,7 +484,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         10, 5, 0, 0),
                                     child: Text(
-                                      '- Tekanan darah: 140/90 mmHg',
+                                      '- Blood Preasure: 140/90 mmHg',
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleLarge!
@@ -513,7 +513,8 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
                         child: Text(
-                          'Recording...',
+                          _isListening ? "Recording Start" : "Recording Stop",
+                          style: TextStyle(),
                         ),
                       ),
                       SizedBox(
@@ -541,12 +542,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                               text: TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: 'Dokter:',
+                                    text: 'Doctor:',
                                   ),
-                                  TextSpan(
-                                    text: ' Ada yang bisa dibantu?',
-                                    style: TextStyle(),
-                                  )
+                                  TextSpan(text: _text)
                                 ],
                                 style: Theme.of(context)
                                     .textTheme
