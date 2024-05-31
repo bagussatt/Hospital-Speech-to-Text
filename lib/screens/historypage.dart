@@ -16,7 +16,8 @@ class HistoryPage extends StatelessWidget {
 
   String getCurrentTime() {
     var now = DateTime.now();
-    var timeFormat = DateFormat('HH:mm:ss'); // Format jam, menit, dan detik
+    var timeFormat =
+        DateFormat('dd/MM HH:mm:ss'); // Format jam, menit, dan detik
     return timeFormat.format(now);
   }
 
@@ -27,7 +28,7 @@ class HistoryPage extends StatelessWidget {
         title: const Text('History Page',
             style: TextStyle(color: Colors.white)), // Judul AppBar
         centerTitle: true, // Membuat judul di tengah
-        backgroundColor: Colors.teal, // Warna AppBar
+        backgroundColor: Color.fromRGBO(135, 76, 204, 0.8),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back,
               color: Colors.white), // Icon tombol kembali
@@ -58,7 +59,7 @@ class HistoryPage extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Colors.teal),
+                          color: Color.fromRGBO(135, 76, 204, 1)),
                     ),
                     const SizedBox(height: 8), // Spacing antar teks
                     Text(getCurrentTime(),
@@ -76,7 +77,7 @@ class HistoryPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: Colors.teal)),
+                            color: Color.fromRGBO(135, 76, 204, 1))),
                     const SizedBox(height: 8),
                     Text(namadoc,
                         style: const TextStyle(
@@ -93,7 +94,7 @@ class HistoryPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: Colors.teal)),
+                            color: Color.fromRGBO(135, 76, 204, 1))),
                     const SizedBox(height: 8),
                     Text(names,
                         style: const TextStyle(
@@ -110,7 +111,7 @@ class HistoryPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: Colors.teal)),
+                            color: Color.fromRGBO(135, 76, 204, 1))),
                     const SizedBox(height: 8),
                     Text(voiceText,
                         style: const TextStyle(
