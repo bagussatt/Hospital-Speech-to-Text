@@ -113,9 +113,12 @@ class HistoryPage extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             color: Color.fromRGBO(135, 76, 204, 1))),
                     const SizedBox(height: 8),
-                    Text(voiceText,
-                        style: const TextStyle(
-                            fontSize: 14)), // Menampilkan rekaman history
+                    Row(
+                      children: [
+                        Text('Doctor: '),
+                        Text(voiceText, style: const TextStyle(fontSize: 14)),
+                      ],
+                    ), // Menampilkan rekaman history
                   ],
                 ),
               ),
