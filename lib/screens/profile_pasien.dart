@@ -373,15 +373,22 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
-                                    'Clinical Data',
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .headlineMedium!
-                                        .copyWith(
-                                            fontFamily: 'Outfit',
-                                            letterSpacing: 0,
-                                            fontWeight: FontWeight.bold),
+                                  Row(
+                                    children: [
+                                      Icon(Icons
+                                          .medical_services), // Replace with your desired icon
+                                      SizedBox(width: 8),
+                                      Text(
+                                        'Clinical Data',
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .headlineMedium!
+                                            .copyWith(
+                                                fontFamily: 'Outfit',
+                                                letterSpacing: 0,
+                                                fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
                                   ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
@@ -508,15 +515,21 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
-                                    'Pharmacy',
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .headlineMedium!
-                                        .copyWith(
-                                            fontFamily: 'Outfit',
-                                            letterSpacing: 0,
-                                            fontWeight: FontWeight.bold),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.local_pharmacy),
+                                      Text(
+                                        'Pharmacy',
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .headlineMedium!
+                                            .copyWith(
+                                              fontFamily: 'Outfit',
+                                              letterSpacing: 0,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                      ),
+                                    ],
                                   ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
